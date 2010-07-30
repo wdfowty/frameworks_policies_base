@@ -104,6 +104,7 @@ class LockScreen extends LinearLayout implements KeyguardScreen, KeyguardUpdateM
     private boolean mEnableMenuKeyInLockScreen;
     private boolean mTrackballUnlockScreen = (Settings.System.getInt(mContext.getContentResolver(), Settings.System.TRACKBALL_UNLOCK_SCREEN, 0) == 1);
     private boolean mLockMusicControls = (Settings.System.getInt(mContext.getContentResolver(), Settings.System.LOCKSCREEN_MUSIC_CONTROLS, 0) == 1);
+    private boolean mLockAlwaysMusic = (Settings.System.getInt(mContext.getContentResolver(), Settings.System.LOCKSCREEN_ALWAYS_MUSIC_CONTROLS, 0) == 1);
 
     /**
      * The status of this lock screen.
