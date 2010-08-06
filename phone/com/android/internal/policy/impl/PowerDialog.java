@@ -71,7 +71,7 @@ public class PowerDialog extends Dialog implements OnClickListener,
 
         setContentView(com.android.internal.R.layout.power_dialog);
 
-	mPromptShutdown = (Settings.System.getInt(context.getContentResolver(), Settings.System.POWER_DIALOG_PROMPT,1) == 1 );
+	mPromptShutdown = (Settings.System.getInt(context.getContentResolver(), Settings.System.POWER_DIALOG_PROMPT, 1) == 1);
 	getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_DIALOG);
         if (!getContext().getResources().getBoolean(
                 com.android.internal.R.bool.config_sf_slowBlur)) {
